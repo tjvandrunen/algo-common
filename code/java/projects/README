@@ -1,0 +1,40 @@
+This directory contains starter code for the projects. Each project 
+(except pretest) is organized into packages with the following naming 
+scheme (not all projects have all such packages):
+
+adt: interfaces defining abstract data types
+impl: classes representing data structures that implement the adts
+alg: classes with static methods implementing algorithms
+test: JUnit tests
+exper: experiments
+
+adt-ds -- Starter code for Project 2.1
+
+bst -- Starter code for Projects 5.(1-4)
+
+btree -- Starter code for Project 5.5
+
+ckyparse -- Starter code for Project 8.3 (with package ckyparse)
+
+dptree -- Starter code for Project 6.1 (with packages heroHall, 
+robotMandMs, and onewayGPS)
+
+hashing -- Starter code for Projects 7.(1-3)
+
+huffman -- Starter code for Project 8.2
+
+linear-sort -- Starter code for Project 3.1
+
+nset-bitvec -- Starter code for Project 3.3
+
+optbst -- Starter code for Project 6.2
+
+pq-heap -- Starter code for Project 3.2 as well as Exercise 3.17
+
+pretest -- Starter code for Project 1.1 (with packages exercises and test)
+
+skiplist -- Starter code for Project 3.4
+
+sort-expr -- Starter code for Project 1.2
+
+trie -- Starter code for Project 8.1

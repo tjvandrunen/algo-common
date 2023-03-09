@@ -1,0 +1,9 @@
+The SML portion of the code base is organized into subdirectories for 
+each series of examples.
+
+adt-basic -- Examples from Section 2.6 ADTs and data structures in other 
+languages
+
+bst -- Examples from Chapter 5, plus starter code for Ex 5.4
+
+trie -- Examples from Section 8.2 (including Exercise 8.26)

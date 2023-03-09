@@ -1,0 +1,26 @@
+The Java code here is used for examples in the text. Most directories 
+are organized into packages with the following naming scheme:
+
+adt: interfaces defining abstract data types
+impl: classes representing data structures that implement the adts
+alg: classes with static methods implementing algorithms
+test: JUnit tests
+exper: experiments
+
+For some sections in the book, the example code in the text is drawn 
+from the project code. In those cases, find the code in ../projects.
+
+adt-basic -- Examples from Sections 2.(1-5) & 2.7; similar code appears under 
+../problems/adt-practice, but with some parts of the code removed
+
+bst-basic -- Examples from Section 5.2 Binary search trees
+
+assert-findmissing -- Examples from 2.7 Programming practices
+
+disj-set -- Examples from Section 3.2 Disjoint sets and array forests; 
+also contains starter code for Exercises 3.(4, 5, 8, 10, 12)
+
+rdparse -- Example code from Section 8.5; also contains starter code for 
+Exercises 8.(53 & 57)
+
+triemap -- Example from Section 8.2

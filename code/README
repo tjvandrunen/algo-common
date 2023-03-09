@@ -1,0 +1,10 @@
+The codebase for Algorithmic Commonplaces contains examples from the 
+book and starter code for the exercises and projects. The code is in 
+Java, Python, C, and SML. The top level organization is by language. 
+Since the java portion of the code base is the largest (and since all
+of the projects are in Java), the java directory is organized into directories
+for examples, exercises, and projects.
+
+See the README files in varous subdirectories for more information on how
+the code in that directory is organized.
+

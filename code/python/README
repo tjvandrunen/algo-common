@@ -1,0 +1,30 @@
+The Python portion of the code base is organized into packages
+
+adt -- Examples from Section 2.6 ADTs and data structures in other languages
+
+clusterer -- Examples from Section 6.6 Natural-breaks classification 
+(use this also for Exercise 6.57)
+
+dpexamples -- Examples from Section 6.1 Overlapping subproblems 
+(openning examples for dynamic programming)
+
+dpthree -- Examples from Sections 6.(2 & 4), Three examples / Three solutions
+
+editdist -- Starter code for Exercise 8.50
+
+graph -- Examples from Chapter 4 Graphs (includes traversal, mst, sssp)
+
+huffman -- Examples from Section 8.4 Huffman encoding
+
+misc -- Examples from Chapter 1 Algorithms (include code referred to in
+various exercises)
+
+optbst -- Examples from Section 6.5 Optimal binary search trees (use 
+this also for Exercse 6.48)
+
+parse -- Examples from Section 8.5 Grammars
+
+searchsort -- Examples from Section 1.1 Algorithms and correctness, 
+Section 3.1 Linear-time sorting algorithms, and 8.1 Sorting algorithms 
+for strings (inludes bounded linear search, binary search, 
+comparison-based sorting algorithms, and linear-time sorting algorithms)

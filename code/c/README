@@ -1,0 +1,24 @@
+The C portion of the code base is organized into directories each 
+containing a collection of C implementation and header files, with a 
+makefile.
+
+All of the adt-* folders are from Section 2.6 ADTs and data structures 
+in other languages, showing different versions of the code.
+
+adt-simple -- Examples from Section 2.6 original version, introducing 
+headers, structs, etc.
+
+adt-funcptr -- Examples from Section 2.6 "Version 2," building structs 
+similar to Java classes using function pointers.
+
+adt-kernel -- Examples from Section 2.6 "Version 3," after the style of 
+the Linux kernel.
+
+bitops -- Examples from Section 3.4 N-sets and bit vectors
+
+btree -- Example from Section 5.6
+
+sort-experiments -- Examples from Section 1.4 Experiments and 3.1 
+Linear-time sorting algorithms
+
+

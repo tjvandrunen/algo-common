@@ -1,0 +1,61 @@
+This directory contains starter code for the exercises that are 
+programminng problems in Java. These are distinct from the projects, as 
+exercises tend to be shorter and more applied. Most directories have a 
+single package of the same name as the enclosing folder.
+
+For starter code for Exercises 3.(4, 5, 8, 10, 12), see ../examples/disj-set.
+
+For starter code for Exercise 3.19, see ../projects/pq-heap
+
+adt-practice -- Starter code for Exercises 2.(11, 14, 17, 20, 28, 39, 
+40, 41); has packages adt, impl, and test
+
+avl2rb -- Starter code for Exericse 5.14
+
+bst2Array -- Starter code for Exercise 5.1
+
+burrowsDelta -- Starter code for Exericse 2.10
+
+capitalGains -- Starter code for Exercise 2.7
+
+checkCylce -- Starter code for Exercise 4.30
+
+findClusterSize -- Starter code for Exercise 7.11
+
+graphTranspose -- Starter code for Exercise 4.8
+
+hackcomplement -- Starter code for Exercise 3.25; has packages adt and impl
+
+infix2RPN -- Starter code for Exercise 2.6
+
+iterator -- Starter code for Exercises 2.(53, 54, 56)
+
+knapsack -- Starter code for Exercise 6.36
+
+linkedheap -- Starter code for Exercise 3.21
+
+matrix -- Starter code for Exercise 6.41
+
+multimap -- Starter code for Exercise 2.42; has packages adt, impl, and test
+
+optimizedIntSet -- Starter code for Exercises 7.3
+
+subsequence -- Starter code for Exercise 6.38
+
+sparseNet -- Starter code for Exercise 3.(28, 29)
+
+stquit -- Starter code for Exercises 2.(58 & 59)
+
+stringsort -- Starter code for Exercises 8.(7, 14, 20, & 22)
+
+sudokuit -- Starter code for Exercises 2.(60-62)
+
+thereAndBackAgain -- Starter code for Exercise 4.32
+
+treesLLRB23 -- Starter code for Exercises 5.(31 & 32)
+
+twoHop -- Starter code for Exercise 4.20
+
+verifyNested -- Starter code for Exercise 2.5
+
+
