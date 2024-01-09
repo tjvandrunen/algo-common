@@ -11,7 +11,7 @@ import adt.Set;
  * Implementation of the Set ADT for strings using a trie.
  * 
  * @author Thomas VanDrunen
- * Algorithmic Commonplaces
+ * CSCI 345, Wheaton College
  * April 22, 2015, revise April 19, 2016
  */
 public class TrieSet implements Set<String> {
@@ -44,11 +44,23 @@ public class TrieSet implements Set<String> {
             isTerminal = false;
         }
 
+        /**
+         * Add the string/suffix beginning at position start to the
+         * subtrie rooted at this node.
+         * @param item The string containing the key to be added
+         * @param start The index where the suffix to be added begins
+         */
         public void add(String item, int start) {
              throw new UnsupportedOperationException();
         }
         
-        public boolean contains(String item, int start) {
+        /**
+         * Test whether the string/suffix beginning at position start is in the
+         * subtrie rooted at this node.
+         * @param item The string containing the key to be tested
+         * @param start The index where the suffix to be tested begins
+         */
+       public boolean contains(String item, int start) {
              throw new UnsupportedOperationException();
        }
 
@@ -65,14 +77,13 @@ public class TrieSet implements Set<String> {
          * Remove a String (suffix) from the subtrie rooted here.
          * If that removal empties this subtrie, then the subtrie
          * should be pruned.
-         * @param item The string to be removed from this subtrie, which
-         * is a suffix of the string to be removed from the entire trie.
+         * @param item The string containing the key to be removed
+         * @param start The index where the suffix to be removed begins
          * @return this, if the subtrie rooted here is still live after the 
          * removal, or null otherwise
          */
-        public TrieNode remove(String item) {
+        public TrieNode remove(String item, int start) {
              throw new UnsupportedOperationException();
-                
         }
         
         /**
@@ -203,14 +214,13 @@ public class TrieSet implements Set<String> {
      */
     public boolean contains(String item) {
         return root.contains(item, 0);
-         throw new UnsupportedOperationException();
     }
 
     /**
      * Remove the given item from the set, if it exists
      */
     public void remove(String item) {
-        root.remove(item);
+        root.remove(item, 0);
     }
 
     /**
