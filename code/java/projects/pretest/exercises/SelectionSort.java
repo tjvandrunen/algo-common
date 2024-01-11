@@ -14,7 +14,7 @@ public class SelectionSort {
      *  -array contains comparable objects. Array is non-null.
      * 
      * POSTCONDITION: 
-     *  - array is sort in decreasing order. More formally, for all n <= m, array[n].compareTo(array[m]) >= 0.
+     *  - array is sorted in increasing order. More formally, for all n <= m, array[n].compareTo(array[m]) <= 0.
      */
     public static <T extends Comparable<? super T>> void selectionSort(T[] array) {
          throw new UnsupportedOperationException();
