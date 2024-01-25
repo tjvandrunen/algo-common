@@ -13,7 +13,7 @@ import adt.Map;
  * Class to implement a bag using a map for a tally.
  * 
  * @author Thomas VanDrunen
- * Algorithmic Commonplaces
+ * CSCI 345, Wheaton College
  * July 10, 2014
  * @param <E> The base-type of the bag
  */
@@ -42,7 +42,7 @@ public class MapBag<E> implements Bag<E> {
     /**
      * How many times does this bag contain this item?
      * @param item The item to check
-     * @return True if the item is in the set, false otherwise
+     * @return The number of times this item is in the bag
      */
     public int count(E item) {
         if (internal.containsKey(item))
@@ -88,75 +88,29 @@ public class MapBag<E> implements Bag<E> {
      * of times they're in the bag.
      */
     public Iterator<E> iterator() {
-        // Iterator over the keys in the internal map
-        final Iterator<E> interIter = internal.iterator();
-        // The first item
-        final E firstItem;
-        // The number of copies of the first item
-        final int firstCopies;
-
-        // set up the first item and its frequency
-        if (interIter.hasNext()) {
-            firstItem = interIter.next();
-            firstCopies = internal.get(firstItem);
-        }
-        // special case for empty bag
-        else {
-            firstItem = null;
-            firstCopies = 0;
-        }
-
         return new Iterator<E>() {
-            // The item to be returned next,
-            // null if we're at the end of the iteration
-            E currentItem = firstItem;
-
-            // the number of copies of the current item
-            // still to be returned, 0 if we're at the
-            // end of the iteration
-            int copiesLeft = firstCopies;
-
+            Iterator<E> internalIt = internal.iterator();
+            E item = internalIt.hasNext() ? internalIt.next(): null;
+            int count = item == null? 0 : internal.get(item);
             public boolean hasNext() {
-                return copiesLeft != 0;
+                return item != null;
             }
-
             public E next() {
-                // iteration all done
-                if (copiesLeft == 0) {
-                    assert currentItem == null;
-                    throw new NoSuchElementException();
-                }
-                // this is not the last one of the current item
-                else if (copiesLeft > 1) {
-                    copiesLeft--;
-                    return currentItem;
-                }
-                // this is the last copy of the current item;
-                // get ready for the next item, if any
-                else { 
-                    assert copiesLeft == 1;
-
-                    // old item; save it to return
-                    E lastCopy = currentItem;
-
-                    // there is a next item
-                    if (interIter.hasNext()) {
-                        currentItem = interIter.next();
-                        copiesLeft = internal.get(currentItem);
+                if (! hasNext()) throw new NoSuchElementException();
+                else {
+                    E toReturn = item;
+                    count--;
+                    if (count == 0) {
+                        item = internalIt.hasNext() ? internalIt.next(): null;
+                        count = item == null? 0 : internal.get(item);
                     }
-                    // there isn't
-                    else { 
-                        currentItem = null;
-                        copiesLeft = 0;
-                    }
-
-                    // return that old item
-                    return lastCopy;
+                    return toReturn;
                 }
             }
+            
         };
     }
-    
+
     @Override
     public String toString() {
     	String toReturn = "[";
