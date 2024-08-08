@@ -4,8 +4,6 @@ package twoHop;
  * Set
  * 
  * Interface to serve as an example of the set ADT.
- * This is similar to what Sedgewick calls a "bag" (but
- * he's wrong).
  * 
  * If overridden, the toString method for set should return
  * a comma separate list of the elements of the set bordered

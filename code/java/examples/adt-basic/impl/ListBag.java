@@ -11,9 +11,6 @@ import adt.List;
  * An implementation of Bag using a List as the underlying
  * implementation.
  * 
- * Recall that our Bag interface differs from what Sedgewick 
- * calls a "bag" (but he's wrong). 
- * 
  * Algorithmic Commonplaces
  * Spring 2016
  * @param <E> The base-type of the bag

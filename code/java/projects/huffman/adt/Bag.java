@@ -4,8 +4,7 @@ package adt;
  * Bag
  * 
  * Interface to serve as an example of the bag (multi-set) ADT.
- * This differs from what Sedgewick calls a "bag" (but
- * he's wrong). I relied somewhat on the Bag interface
+ * I relied somewhat on the Bag interface
  * in org.apache.commons.collections to define what a bag
  * should be (for example, the iterator returns each item
  * the number of times it's in the bag, not necessarily only

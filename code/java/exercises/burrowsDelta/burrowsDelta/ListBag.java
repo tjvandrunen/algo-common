@@ -1,16 +1,15 @@
-package burrowsDelta;
+package impl;
 
 import java.util.Iterator;
 
+import adt.Bag;
+import adt.List;
 
 /**
  * ListBag
  * 
  * An implementation of Bag using a List as the underlying
  * implementation.
- * 
- * Recall that our Bag interface differs from what Sedgewick 
- * calls a "bag" (but he's wrong). 
  * 
  * Algorithmic Commonplaces
  * Spring 2016
@@ -24,16 +23,19 @@ public class ListBag<E> implements Bag<E> {
      */
     private List<E> internal;
 
-    public ListBag() {
-
+    public ListBag(int implementation) {
         internal = new LinkedList<E>();
+    }
+    
+    public ListBag() {
+            internal = new MapList<E>();
     }
     /**
      * Return an iterator over this collection (remove() is
      * unsupported, nor is concurrent modification checked).
      */
    public Iterator<E> iterator() {
-        throw new UnsupportedOperationException();
+        return internal.iterator();
     }
 
     /**
@@ -42,7 +44,7 @@ public class ListBag<E> implements Bag<E> {
      * @param item The item to add
      */
     public void add(E item) {
-         throw new UnsupportedOperationException();
+        internal.add(item);
     }
 
     /**
@@ -51,7 +53,11 @@ public class ListBag<E> implements Bag<E> {
      * @return The number of occurences of this item in the bag
      */
     public int count(E item) {
-         throw new UnsupportedOperationException();
+        int tally = 0;
+        for (Iterator<E> it = iterator(); it.hasNext(); )
+            if (it.next().equals(item))
+                tally++;
+        return tally;
     }
 
     /**
@@ -60,7 +66,12 @@ public class ListBag<E> implements Bag<E> {
      * @param item The item to remove
      */
     public void remove(E item) {
-         throw new UnsupportedOperationException();
+        for (int i = 0; i < internal.size(); ) {
+            if (internal.get(i).equals(item))
+                internal.remove(i);
+            else
+                i++;
+        }
     }
 
     /**
@@ -69,7 +80,7 @@ public class ListBag<E> implements Bag<E> {
      * @return The number of items.
      */
     public int size() {
-         throw new UnsupportedOperationException();
+        return internal.size();
     }
 
     /**
@@ -77,7 +88,7 @@ public class ListBag<E> implements Bag<E> {
      * @return True if the bag is empty, false otherwise.
      */
     public boolean isEmpty() {
-         throw new UnsupportedOperationException();
+        return internal.size() == 0;
     }
     
     @Override

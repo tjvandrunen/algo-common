@@ -4,8 +4,6 @@ package adt;
  * Set
  * 
  * Interface to serve as an example of the set ADT.
- * This is similar to what Sedgewick calls a "bag" (but
- * he's wrong).
  * 
  * If the toString method is overridden, it should return
  * a comma separated list of the elements of the set bordered

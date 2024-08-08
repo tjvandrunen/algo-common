@@ -4,8 +4,6 @@ package graphTranspose;
  * Set
  * 
  * Interface to serve as an example of the set ADT.
- * This is similar to what Sedgewick calls a "bag" (but
- * he's wrong).
  * 
  * @author Thomas VanDrunen
  * Algorithmic Commonplaces
