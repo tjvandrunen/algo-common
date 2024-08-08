@@ -31,6 +31,6 @@ public class SelectionSort {
      */
     public static <T extends Comparable<? super T>> int selectSmallest(T[] array, int start) {
         assert start < array.length;
-        throw new UnsupportedOperationException()
+        throw new UnsupportedOperationException();
     }
 }
