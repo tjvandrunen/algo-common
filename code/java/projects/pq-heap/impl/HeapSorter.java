@@ -39,29 +39,6 @@ public class HeapSorter {
         
         
     }
-
-    
-    /**
-     * Sort this array, in place.
-     * @param array The array to sort.
-     */
-    public static <E> void sort(final E[] array, Comparator<E> compy) {
-        
-        Heap<E> heap = Heap.array2Heap(array, array.length,
-                new Comparator<E>() {
-                    public int compare(E o1, E o2) {
-                        return - compy.compare(o1, o2);
-                    }
-                });
-        
-        // insert code for completing the heap sort algorithm
-
-        // postcondition: that heap.internal is sorted
-        
-    }
-
-    
-    
    
     
 }

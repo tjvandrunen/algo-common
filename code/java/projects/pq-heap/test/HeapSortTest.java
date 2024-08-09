@@ -60,22 +60,5 @@ public class HeapSortTest extends HeapTest {
         assertTrue(isSorted(array));
     }
     
-    @Test
-    public void testNonTrivialWithComparator() {
-        Comparator<Integer> reverse = new Comparator<Integer>() {
-            public int compare(Integer o1, Integer o2) {
-                return o2-o1;
-            }
-        };
-        Integer[] array = new Integer[]{ 33, 22, 66, 99, 11, 88, 55, 77, 44 };
-        HeapSorter.sort(array, reverse);
-        for (int x : array) 
-            System.out.print(x + " ");
-        System.out.println("");
-        assertTrue(isSortedByComparator(array, reverse));
-    }
-    
-
-    
     
 }
